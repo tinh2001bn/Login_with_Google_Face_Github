@@ -1,38 +1,188 @@
-.App {
-  text-align: center;
+
+.navbar{
+    height: 50px;
+    background-color: rgb(254, 111, 208);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.logo{
+  font-size: 20px;
+  font-weight: bold;
+}
+.list{
+
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.listItem{
+  margin-right: 30px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.avatar{
+  width: 32px;
+  height: 32px;
+  border: 1px solid;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.home{
+  display: flex;
+  padding: 50px 80px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.card{
+  width: 30%;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: -7px 14px 19px 9px rgba(0,0,0,0.75);
+-webkit-box-shadow: -7px 14px 19px 9px rgba(0,0,0,0.75);
+-moz-box-shadow: -7px 14px 19px 9px rgba(0,0,0,0.75);
+}
+.img{
+  width: 100%;
+  object-fit: cover;
+  margin: 20px 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.desc{
+  color: black;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+.CardButton{
+  border: none;
+  border-radius: 10px;
+  background-color: blueviolet;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.post{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.postImg{
+   width: 100%;
+   height: 300px;
+   object-fit: cover;
+   margin-bottom: 25px;
+}
+.postDes{
+  padding: 0 100px;
+  font-size: 25px;
+  font-weight: 300;
+  color: gray;
+}
+.postLongDes{
+  padding: 100px;
+  padding-top: 50px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.login{
+  height: calc(90vh);
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+.wapper{
+  width: 60%;
+  height: 75%;
+  box-shadow: 6px 3px 19px 3px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 6px 3px 19px 3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 6px 3px 19px 3px rgba(0,0,0,0.75);
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+}
+.left ,.right{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.center{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.or{
+  border: 2px  solid lightgray;
+  border-radius: 50%;
+  padding: 10px;
+  color: gray;
+  background-color: aliceblue;
+  font-weight: 500;
+}
+.line{
+  width: 0.5px;
+  height: 70%;
+  background-color: lightcyan;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: -1;
+}
+.loginButton{
+  width: 150px;
+  padding: 15px 25px;
+  border-radius: 5px;
   color: white;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.google{
+  background-color: #df4930;
+}
+.facebook{
+  background-color: #507cc0;
+}
+.github{
+  background-color: black;
 }
 
-.App-link {
-  color: #61dafb;
+.icon{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+input{
+  width: 200px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.submit{
+  width: 200px;
+  background-color: rgba(128, 0, 128, 0.671);
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 5px;
 }
+
+.loginTitle{
+  position: absolute;
+  top: 150px;
+  color:lightgray
+}
+
