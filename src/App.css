@@ -178,6 +178,7 @@ input{
   border: none;
   padding: 15px 20px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .loginTitle{
@@ -186,3 +187,8 @@ input{
   color:lightgray
 }
 
+.link{
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 20px;
+}
